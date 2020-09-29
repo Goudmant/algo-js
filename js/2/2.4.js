@@ -6,5 +6,8 @@ while (i <= 100) {
     i += 1;
 }
 for (i = 1; i <= 100; i += 2) {
-    console.log(i);
+    console.log(i / 2);
+}
+for (i = 1; i <= 100; i += 3) {
+    console.log(i / 3);
 }
