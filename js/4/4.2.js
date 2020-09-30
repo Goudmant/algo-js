@@ -1,5 +1,7 @@
 const readlineSync = require("readline-sync");
 
-let rand10 = () => { return Math.trunc((Math.random() * 10) + 1); }
+function rand10() {
+    return Math.floor(Math.random() * 10) + 1;
+}
 
 console.log(rand10());
