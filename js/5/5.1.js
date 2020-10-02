@@ -10,9 +10,9 @@ function askTvSerie() {
     //soucis structure 
     let askCast = true;
     while (askCast = true) {
-        let castTemps = readlineSync.question("Very interesting! can you tell me who's playing in it? Enter 'exit' to stop. ")
+        let castTemps = readlineSync.question("Very interesting! can you tell me who's playing in it? ('empty to finish')");
 
-        if (castTemps === "exit") {
+        if (castTemps === "empty") {
             break;
         }
         tvSerie.cast.push(castTemps);
