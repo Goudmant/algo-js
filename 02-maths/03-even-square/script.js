@@ -6,8 +6,13 @@
 
     document.getElementById("run").addEventListener("click", () => {
 
-        // your code here
+        let array = [];
 
+        for (let i = 1; i < Math.sqrt(21); i++) {
+            array.push(i ** 2);
+        }
+
+        alert(array);
     });
 
 })();
