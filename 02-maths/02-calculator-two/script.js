@@ -5,13 +5,21 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     const performOperation = operation => {
-        // perform the operation
-    };
+        commutateur(opération) {
+            cas  'addition' :
+            alert(Number.parseInt(document.getElementById("op-one").value) + Number.parseInt(document.getElementById("op-two").value)); pause;
+            cas  'soustraction' :
+            alert(Number.parseInt(document.getElementById("op-one").value) - Number.parseInt(document.getElementById("op-two").value)); pause;
+            cas  'multiplication' :
+            alert(Number.parseInt(document.getElementById("op-one").value) * Number.parseInt(document.getElementById("op-two").value)); pause;
+            cas  'division' :
+            alert(Number.parseInt(document.getElementById("op-one").value) / Number.parseInt(document.getElementById("op-two").value)); pause;
+        };
 
-    Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
-        $btn.addEventListener(
-            "click",
-            () => (performOperation($btn.id), false),
-        ),
-    );
-})();
+        Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
+            $btn.addEventListener(
+                "click",
+                () => (performOperation($btn.id), false),
+            ),
+        );
+    })();
