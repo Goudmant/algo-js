@@ -3,6 +3,8 @@
 
 (() => {
 
-    // your code here
+    document.getElementById("exécuter").addEventListener("clic", function () {
+        document.getElementsByTagName('corps')[0].le style.backgroundColor = document.getElementById('couleur').valeur;
+    });
 
 })();
