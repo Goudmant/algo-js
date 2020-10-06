@@ -4,6 +4,12 @@
 
 (() => {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        document.getElementsByTagName('body')[0].style.backgroundColor = '#' + randColor();
+    });
+
+    function randColor() {
+        return randHexaNum = Math.trunc((Math.random() * 16777215) + 1).toString(16);
+    }
 
 })();

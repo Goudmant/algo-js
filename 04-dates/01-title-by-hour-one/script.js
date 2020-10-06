@@ -4,8 +4,19 @@
 
 (() => {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    let age = new Date();
 
-    // your code here
+    if ((age >= 18)(age <= 17)) {
+        alert("Hello!");
+    } else {
+        alert("Aurevoir");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let theDate = new Date();
+        document.getElementById("target").innerHTML = (theDate.getHours() < 18) ? "hello" : "Good evening";
+    });
+
+
 
 })();

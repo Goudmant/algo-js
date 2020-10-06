@@ -3,8 +3,9 @@
 
 (() => {
 
-    document.getElementById("exécuter").addEventListener("clic", function () {
-        document.getElementsByTagName('corps')[0].le style.backgroundColor = document.getElementById('couleur').valeur;
+    document.getElementById("run").addEventListener("click", function () {
+        document.getElementsByTagName('body')[0].style.backgroundColor = document.getElementById('color').value;
     });
 
 })();
+//erreur application
