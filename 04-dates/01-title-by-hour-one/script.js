@@ -10,9 +10,9 @@
     console.log(time)
 
     if (time < 18) {
-        text.innerHTML = 'Hello !'
+        text.innerHTML = "hello ! "
     } else {
-        text.innerHTML = 'Good evening !'
+        text.innerHTML = "Good evening !"
     }
 
 
