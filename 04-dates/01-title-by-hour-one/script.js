@@ -4,18 +4,16 @@
 
 (() => {
 
-    let age = new Date();
+    const text = document.getElementById('target');
+    let time = new Date().getHours();
 
-    if ((age >= 18)(age <= 17)) {
-        alert("Hello!");
+    console.log(time)
+
+    if (time < 18) {
+        text.innerHTML = 'Hello !'
     } else {
-        alert("Aurevoir");
+        text.innerHTML = 'Good evening !'
     }
-
-    document.addEventListener("DOMContentLoaded", function () {
-        let theDate = new Date();
-        document.getElementById("target").innerHTML = (theDate.getHours() < 18) ? "hello" : "Good evening";
-    });
 
 
 
