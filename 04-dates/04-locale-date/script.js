@@ -4,8 +4,19 @@
 
 (() => {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    const target = document.getElementById('target');
 
-    // your code here
+    let now = new Date();
+    let date = now.toLocaleString('en-US', {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        hourCycle: 'h24'
 
+    });
+
+    target.innerHTML = date;
 })();
