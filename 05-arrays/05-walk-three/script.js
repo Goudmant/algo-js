@@ -31,6 +31,15 @@
         },
     ];
 
-    // your code here
+    let(1) = firstname;
+    let(2) = lastname;
+
+    const run = document.getElementById('run');
+
+    run.addEventListener('click', function () {
+        people.forEach(function (i) {
+            console.log(element(1) + "" + (2))
+        })
+    })
 
 })();
