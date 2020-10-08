@@ -44,21 +44,27 @@
     //})
     ///Pourquoi ca ne marque pas
 
-    function getFridays(month, year) {
-        var ret = [];
-        for (var i = 1; i <= 31; i++) {
-            var date = new Date();
-            date.setDate(i);
-            date.setMonth(month - 1);
-            date.setFullYear(year);
-            if (date.getDay() === 5) {
-                var today = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
-                ret.push(today);
+    const run = document.getElementById('run');
+    const year = document.getElementById('year');
 
+
+    function getSpookyFridaysIn(yr) {
+        let spookyMonths = []
+        let monthName = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+        for (let month = 0; month < 12; month++) {
+            let d = new Date(yr, month, 13);
+            if (d.getDay() == 5) {
+                spookyMonths.push(monthName[d.getMonth()])
             }
         }
-        return ret;
+        return spookyMonths;
     }
+
+    run.addEventListener('click', function () {
+        let yearInt = parseInt(year.value);
+        alert(`In ${yearInt}, Friday 13th happens in : ${getSpookyFridaysIn(yearInt)}`)
+    })
+
 
 
 
