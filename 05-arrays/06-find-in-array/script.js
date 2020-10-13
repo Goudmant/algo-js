@@ -83,7 +83,7 @@
     const run = document.getElementById('run');
 
     run.addEventListener('click', function () {
-        for (let i = 0; < people.length; i++) {
+        for (let i = 0; < people.length i++) {
 
             if people.forEach(element => {
                 console.log(element.email)
@@ -98,5 +98,5 @@
             }
         }
     })
-    // a vérifier
+    // a vérifier !!
 })();

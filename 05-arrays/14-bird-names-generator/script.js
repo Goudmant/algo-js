@@ -30,5 +30,12 @@
         "arboré",
     ]);
 
-    // your code here
+    document.getElementById('run').addEventListener('click',function(){
+        let randBird = Math.trunc(Math.random()*birds.length);
+        let randAdj= Math.trunc(Math.random()*adjectives.size);
+        let items =Array.from(adjectives);
+
+        document.getElementById('target').innerHTML = `${birds[randBird].name} ${items[randAdj]}`;
+        (birds[randBird].fem)? document.getElementById('target').innerHTML = 'la' +document.getElementById('target').innerHTML+'e' : document.getElementById('target').innerHTML = 'le'+document.getElementById('target').innerHTML;
+    })
 })();

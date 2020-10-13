@@ -20,6 +20,9 @@
         "cerise",
     ];
 
-    // your code here
-
+    var uniquefruits = [];
+    $.each(fruits, function(i, el){
+    if($.inArray(el, uniqueNames) === -1) uniqueNames.push(el);
+});
 })();
+// a revoire
