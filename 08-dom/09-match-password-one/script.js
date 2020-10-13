@@ -3,6 +3,14 @@
 
 (() => {
 
-    // your code here
+    let psw1 = document.getElementById('passe-one');
+    let psw2 = document.getElementById('passe-two');
+
+    document.getElementById('run').addEventListener('click',()=> {
+        if(psw1.value !== psw2.value){
+            psw1.style.border = '3px solid red';
+            psw2.style.border = '3px solid red';
+        }
+    })
 
 })();
